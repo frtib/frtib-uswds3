@@ -7,15 +7,17 @@
     "reset": "npx rimraf .git",
     "start": "bundle exec jekyll serve --livereload",
     "start-detached": "bundle exec jekyll serve --detach",
-    "htmlproofer": "bundle exec htmlproofer _site",
-    "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\"  --sitemap-exclude \"/admin\""
+    "htmlproofer": "bundle exec htmlproofer --allow-hash-href --ignore-empty-mailto --disable-external _site",
+    "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml  --sitemap-exclude \"/pdf\"  --sitemap-exclude \"/admin|/*.pdf\" "
   },
   "dependencies": {
-    "netlify-cms": "^2.10.192",
-    "uswds": "^2.13.1"
+    "@uswds/uswds": "^3.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.5"
   },
   "devDependencies": {
-    "pa11y-ci": "^2.4.0",
+    "@uswds/compile": "^1.0.0-beta.3",
+    "pa11y-ci": "^2.4.2",
     "rimraf": "^3.0.2"
   }
 }

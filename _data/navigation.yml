@@ -1,0 +1,217 @@
+# Site Navigation
+top_navigation:
+  - name: Home
+    url: /
+  - name: Board, Executive Director, and ETAC
+    url: /board-members
+  - name: Reading Room
+    url: /reading-room/
+    children: reading_room_nav
+  - name: Meeting Minutes
+    url: /meeting-minutes
+  - name: Careers
+    url: /careers
+  - name: Procurement
+    url: /procurement
+    children: procurement_nav
+
+# links above header search bar
+search_links:
+  - name: Contacts
+    url: "/contacts"
+  - name: TSP.gov
+    url: "https://www.tsp.gov"
+
+reading_room_nav:
+  - name: Reading Room
+    url: /reading-room/
+  - name: FERSA
+    url: /reading-room/fersa/
+    text: "Federal Employees' Retirement System Act"
+    button_text: "Learn more about FERSA"
+    image: logo.jpg
+  - name: Regulations
+    url: /reading-room/regulations/
+    text: "Rules governing the FRTIB"
+    button_text: "Visit the Regulations page"
+    image: hire-us.jpg
+  - name: Financial Statements
+    url: /reading-room/financial-statements/
+    text: "Financial statements since 2009"
+    button_text: "Visit the Financial Statements page"
+    image: Lfunds.gif
+  - name: FRTIB Strategic Plan
+    url: /reading-room/strategic-plan/
+    text: "Four year plan and near term goals for the FRTIB"
+    button_text: "Visit the Strategic Plan page"
+    image: Competitiveness.jpg
+  - name: Reports to Congress
+    url: /reading-room/reports-to-congress/
+    text: "Annual FRTIB report to congress including educational efforts"
+    button_text: "Visit the Reports to Congress page"
+    image: frtiblogo.jpg
+  - name: Press Releases
+    url: /reading-room/press-releases/
+    children: rr_pr_nav
+    text: "All the news that fit to print"
+    button_text: "Visit the Press Releases page"
+    image: servicerep2.jpg
+  - name: Participant Surveys
+    url: /reading-room/participant-surveys/
+    children: rr_partsurvey_nav
+    text: "Who are our customers and how happy are they?"
+    button_text: "Visit the Participant Surveys page"
+    image: recommend.gif
+  - name: Employee Surveys
+    url: /reading-room/employee-surveys/
+    text: "Who are our employees and how happy are they?"
+    button_text: "Visit the Employee Surveys page"
+    image: banner_benefits.jpg
+  - name: Investment Benchmarks
+    url: /reading-room/investment-benchmarks/
+    text: "Benchmark evaluations and investment option reviews"
+    button_text: "Visit the Investment Benchmarks page"
+    image: rothVideo.png
+  - name: FOIA
+    url: /foia/
+    children: rr_foia_nav
+    text: "Frequently accessed records and FOIA requirements"
+    button_text: "Visit the FOIA page"
+    image: tsp_ad.gif
+
+
+rr_pr_nav:
+  - name: Press Releases 2021
+    url: /reading-room/press-releases/2021/
+  - name: Press Releases 2020
+    url: /reading-room/press-releases/2020/
+  - name: Press Releases 2019
+    url: /reading-room/press-releases/2019/
+  - name: Press Releases 2018
+    url: /reading-room/press-releases/2018/
+  - name: Press Releases 2017
+    url: /reading-room/press-releases/2017/
+  - name: Press Releases 2016
+    url: /reading-room/press-releases/2016/
+  - name: Press Releases 2015
+    url: /reading-room/press-releases/2015/
+  - name: Press Releases 2014
+    url: /reading-room/press-releases/2014/
+  - name: Press Releases 2013
+    url: /reading-room/press-releases/2013/
+  - name: Press Releases 2012
+    url: /reading-room/press-releases/2012/
+
+
+rr_partsurvey_nav:
+  - name: Behavior and Demographics
+    url: /reading-room/participant-surveys/behavior/
+    text: "Participant Behavior and Demographics"
+    button_text: "See surveys"
+    image: FRTIB_Seal_White.png
+  - name: Financial Wellness Surveys
+    url: /reading-room/participant-surveys/wellness/
+    text: "Financial Wellness Surveys"
+    button_text: "See surveys"
+    image: FRTIB_Seal_White.png
+  - name: Outreach Evaluation Summaries
+    url: /reading-room/participant-surveys/outreach/
+    text: "Outreach Evaluation Summaries"
+    button_text: "See summaries"
+    image: FRTIB_Seal_White.png
+  - name: Satisfaction Surveys
+    url: /reading-room/participant-surveys/satisfaction/
+    text: "Participant Behavior and Demographics"
+    button_text: "See results"
+    image: FRTIB_Seal_White.png
+
+
+rr_foia_nav:
+  - name: Frequently Requested Records
+    url: /foia/frequent/
+    text: "Frequently Requested Records"
+    button_text: "See records"
+    image: FRTIB_Seal_White.png
+  - name: E-FOIA Requirements
+    url: /foia/requirements/
+    text: "E-FOIA Requirements"
+    button_text: "See requirements"
+    image: FRTIB_Seal_White.png
+  - name: FOIA Fiscal Year Reports
+    url: /foia/year/
+    text: "Fiscal Year Reports"
+    button_text: "See reports"
+    image: FRTIB_Seal_White.png
+
+procurement_nav:
+  - name: Procurement
+    url: /procurement/
+  - name: Acquisition Process and Methods
+    url: /procurement/acquisitions/
+#  - name: Contract 1
+#    url: /contract1/
+
+
+onboarding_nav:
+  - name: Onboarding
+    url: /onboarding/
+  - name: Pre-Onboarding Training
+    url: /onboarding/training/
+    button_text: "See training"
+  - name: Federal Employees Forms
+    url: /onboarding/forms/
+    button_text: "See forms"
+  - name: Orientation
+    url: /onboarding/orientation/
+    button_text: "See orientation"
+
+
+search_nav:
+  - name: Everything
+    group: everything
+    dc:
+  - name: Reports
+    group: reports
+    dc: 9429
+  - name: Participant Surveys
+    group: surveyspart
+    dc: 9430
+  - name: Employee Surveys
+    group: surveysemp
+    dc: 9431
+  - name: Board Meeting Minutes
+    group: minutes
+    dc: 9433
+
+footer_nav:
+  - name: Privacy Policy
+    url: /privacy/
+  - name: No Fear Act
+    url: /no-fear/
+  - name: Fair Act
+    url: /fair-act/
+  - name: Accessibility
+    url: /accessibility/
+  - name: EEO
+    url: /eeo/
+  - name: Data
+    url: /data/
+  - name: Onboarding
+    url: /onboarding/
+  - name: Vulnerability Disclosure
+    url: /vulnerability-disclosure-policy/
+  - name: FRTIB IPv6 Policy
+    url: /IPv6/
+
+privacy_nav:
+  - name: Privacy Policy
+    url: /privacy/
+  - name: Automatically captured data
+    url: /automatically-captured-data/
+    button_text: "Visit the Automatically captured data page"
+  - name: Cookies
+    url: /cookies/
+    button_text: "Visit the Cookies page"
+  - name: Security Monitoring
+    url: /security-monitoring/
+    button_text: "Visit the Security Monitoring page"

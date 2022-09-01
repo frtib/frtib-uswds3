@@ -18,19 +18,25 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: Agency Name
-email: contact@example.gov
+title: FRTIB
+email: webmaster@frtib.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Agency Name (EAC) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   Aenean et sapien a leo auctor scelerisque quis nec magna. Sed dictum ante a risus vehicula facilisis.
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://example.gov" # the base hostname & protocol for your site, e.g. https://example.com.
+url: "https://www.frtib.gov" # the base hostname & protocol for your site, e.g. https://example.com.
   # Required to support the jekyll-sitemap plugin below.
   # Uncomment the url line when ready to push to production. If using different branches for multiple
   # custom domains, edit this url parameter in the relevant branch to match the relevant custom domain.
+# url: https://federalist-17910b06-3ede-48a7-b216-90b5116c6220.app.cloud.gov/site/frtib/frtib.gov/
 
 # Twitter handle. Only the handle, not the URL.
 twitter: 18F
+
+# contact numbers
+thriftline: 1-TSP-YOU-FRST
+phone: 1-877-968-3778
+tdd: 1-877-847-4385
 
 #################################################################
 #
@@ -66,6 +72,7 @@ twitter: 18F
 #
 #################################################################
 dap:
+  agency: FRTIB
   # agency: your-agency
 
   # Optional
@@ -73,6 +80,11 @@ dap:
 
 # Configuration for Google Analytics
 ga:
+  # ua: your-ua
+
+# Configuration for Google Analytics 4
+ga4:
+  measurement_id: G-KF4562THJM
   # ua: your-ua
 
 # Site Navigation
@@ -111,10 +123,16 @@ searchgov:
   endpoint: https://search.usa.gov
 
   # Replace this with your search.gov account.
-  affiliate: federalist-uswds-example
+  # affiliate: federalist-uswds-example
 
   # Replace this with your access key.
-  access_key: xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=
+  # access_key: xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=
+
+
+  # default search.  look in search_script for the list of search groups
+  affiliate: frtib.gov
+  access_key: w-pMrfhChfsSEHdwEDq9xjDo7VA5a0ZxFcfEi9FKFuM=
+  # access_key: 9hTgu4agx1cXdZAZ1eEnD8cgCBWXNgofu3f4CEY2
 
   # This renders the results within the page instead of sending to user to search.gov.
   inline: true
@@ -122,6 +140,8 @@ searchgov:
   # This allows Search.gov to present relevant type-ahead search suggestions in your website's search box.
   # If you do not want to present search suggestions, set this value to false.
   suggestions: true
+
+  placeholder: Search FRTIB.gov
 
 ##########################################################################################
 # The values below here are more advanced and should only be
@@ -132,15 +152,46 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  meeting_minutes:
+    label: meeting_minutes
+    output: true
+  pdf:
+    label: pdf
+    output: true
+  careers:
+    label: careers
+    output: false
+  docs:
+    label: docs
+    output: false
+
+defaults:
+  - scope:
+      path: "_meeting_minutes"
+    values:
+      sortKey: 2222-10-
 
 permalink: pretty
+
+last-modified-at:
+  date-format: '%d-%b-%y'
+
+# markdown: kramdown
+#plugins:
+#  - jekyll-feed
+#  - jekyll-paginate-v2
+#  - jekyll-last-modified-at
+#  - jekyll-redirect-from
+#  - jekyll-sitemap # See additional instructions for url parameter above.
+#  - jekyll-seo-tag
+
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
 # The values here represent the defaults if nothing is set
 pagination:
   # Site-wide kill switch, disabled here it doesn't run at all
-  enabled: true
+  enabled: false
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
   debug: false
   # The default document collection to paginate if nothing is specified ('posts' is default)
@@ -171,6 +222,12 @@ pagination:
   trail:
     before: 2
     after: 2
+  # Optional, the default file extension for generated pages (e.g html, json, xml).
+  # Internally this is set to html by default
+  extension: html
+  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
+  # Without file extension
+  indexpage: "index.html"
 
 exclude:
   - package.json
@@ -195,5 +252,6 @@ assets:
       - "not dead"
   compression: true
   sources:
-    - node_modules/uswds/dist
-    - node_modules/netlify-cms/dist
+#    - node_modules/uswds/dist
+    - node_modules/@uswds/uswds/dist
+#    - node_modules/netlify-cms/dist
