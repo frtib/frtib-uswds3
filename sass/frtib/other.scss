@@ -62,7 +62,7 @@ a::before, *::after, a:focus {
 // DAV: I added this to override home usa-hero
 
 .usa-hero {
-  background-image: asset_url("hero/HomeHero_L.jpg");
+  background-image: url("../../img/hero/HomeHero_L.jpg");
   background-position: 50%;
   background-size: cover;
   background-color: #981b1e;

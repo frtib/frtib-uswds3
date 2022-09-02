@@ -34,11 +34,11 @@ Board meetings, which can be observed by the public, are generally held the 4<su
 Older meeting minutes files can be accessed as ZIP files (with attachments) at the [Meeting Minutes Archive](https://minutes.frtib.gov/){: target="_blank" }.
 
 {% comment -%}
+{% endcomment -%}
 <!-- uncomment this liqud block to see examples of the alert types -->
 {% include alert-block msg_type="info" msg_head="info head" msg_body="this is the info message" -%}
 {% include alert-block msg_type="warning" msg_head="warning head" msg_body="this is the warning message" -%}
 {% include alert-block msg_type="error" msg_head="error head" msg_body="this is the error message" -%}
 {% include alert-block msg_type="success" msg_head="success head" msg_body="this is the success message" -%}
-{% endcomment -%}
 
 <!-- CONTENT END -->
